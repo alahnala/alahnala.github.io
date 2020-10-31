@@ -7,8 +7,8 @@
 <title>Allie Lahnala</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: index;
-		--web-view-id: index;
+		--web-view-name: research;
+		--web-view-id: research;
 		--web-scale-to-fit: true;
 		--web-scale-to-fit-type: fit;
 		--web-scale-on-resize: true;
@@ -16,7 +16,7 @@
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: index;
+		--web-view-ids: research;
 	}
 	* {
 		margin: 0;
@@ -24,14 +24,14 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#index {
+	#research {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		background-color: rgba(232,240,239,1);
 		overflow: hidden;
-		--web-view-name: index;
-		--web-view-id: index;
+		--web-view-name: research;
+		--web-view-id: research;
 		--web-scale-to-fit: true;
 		--web-scale-to-fit-type: fit;
 		--web-scale-on-resize: true;
@@ -139,7 +139,7 @@
 		position: absolute;
 		width: 12.933px;
 		height: 22.24px;
-		left: 24.531px;
+		left: 24.53px;
 		top: 2.342px;
 		transform: matrix(1,0,0,1,0,0);
 	}
@@ -204,6 +204,10 @@
 		overflow: visible;
 		width: 302px;
 		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: view;
+		--web-action-target: index;
+		cursor: pointer;
 		line-height: 65px;
 		margin-top: -10.5px;
 		text-align: left;
@@ -264,17 +268,13 @@
 		color: rgba(26,46,53,1);
 		letter-spacing: 0.2px;
 	}
-	#Research {
+	#Research_ {
 		left: 2px;
 		top: 64px;
 		position: absolute;
 		overflow: visible;
 		width: 153px;
 		height: 44px;
-		--web-animation: fadein 0.3s ease-out;
-		--web-action-type: view;
-		--web-action-target: research;
-		cursor: pointer;
 		line-height: 53px;
 		margin-top: -11px;
 		text-align: center;
@@ -292,6 +292,10 @@
 		overflow: visible;
 		width: 155px;
 		height: 44px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: view;
+		--web-action-target: index;
+		cursor: pointer;
 		line-height: 53px;
 		margin-top: -11px;
 		text-align: center;
@@ -316,6 +320,7 @@
 		height: 280px;
 		left: 606px;
 		top: 153px;
+		display: none;
 		overflow: visible;
 	}
 	#About_Me_ {
@@ -369,16 +374,15 @@
 		color: rgba(26,46,53,1);
 		letter-spacing: 0.2px;
 	}
-	#Research_ {
+	#Research_ba {
 		position: absolute;
 		width: 550px;
 		height: 850px;
 		left: 606px;
 		top: 153px;
-		display: none;
 		overflow: visible;
 	}
-	#Research_ba {
+	#Research_bb {
 		left: 0px;
 		top: 0px;
 		position: absolute;
@@ -3624,7 +3628,7 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="index">
+<div id="research">
 	<svg class="Background">
 		<rect id="Background" rx="20" ry="20" x="0" y="0" width="1824" height="976">
 		</rect>
@@ -3666,7 +3670,7 @@ window.application = new Application();
 				<span>github.com/alahnala</span>
 			</div>
 		</div>
-		<div id="Allie_Lahnala">
+		<div onclick="application.goToTargetView(event)" id="Allie_Lahnala">
 			<span>Allie Lahnala</span>
 		</div>
 	</div>
@@ -3677,10 +3681,10 @@ window.application = new Application();
 		<div onclick="application.goToTargetView(event)" id="Activities">
 			<span>Activities</span>
 		</div>
-		<div onclick="application.goToTargetView(event)" id="Research">
+		<div id="Research_">
 			<span>Research</span>
 		</div>
-		<div id="About_Me">
+		<div onclick="application.goToTargetView(event)" id="About_Me">
 			<span>About Me</span>
 		</div>
 	</div>
@@ -3696,8 +3700,8 @@ window.application = new Application();
 			<span>I’m advised by </span><span style="text-decoration:underline;">Prof. Rada Mihalcea</span><span> in the </span><span style="text-decoration:underline;">Language and Information Technologies</span><span> lab.<br/>We are part of the </span><span style="text-decoration:underline;">Artificial Intelligence</span><span> lab in the </span><span style="text-decoration:underline;">Computer Science & Engineering</span><span> department <br/>at </span><span style="text-decoration:underline;">University of Michigan</span><span>.</span>
 		</div>
 	</div>
-	<div id="Research_">
-		<div id="Research_ba">
+	<div id="Research_ba">
+		<div id="Research_bb">
 			<span>Research</span>
 		</div>
 		<div id="Interests">

@@ -7,16 +7,16 @@
 <title>Allie Lahnala</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: index;
-		--web-view-id: index;
+		--web-view-name: notes;
+		--web-view-id: notes;
 		--web-scale-to-fit: true;
 		--web-scale-to-fit-type: fit;
 		--web-scale-on-resize: true;
-		--web-show-by-media-query: true;
+		--web-application: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: index;
+		--web-view-ids: notes;
 	}
 	* {
 		margin: 0;
@@ -24,18 +24,18 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#index {
+	#notes {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		background-color: rgba(232,240,239,1);
 		overflow: hidden;
-		--web-view-name: index;
-		--web-view-id: index;
+		--web-view-name: notes;
+		--web-view-id: notes;
 		--web-scale-to-fit: true;
 		--web-scale-to-fit-type: fit;
 		--web-scale-on-resize: true;
-		--web-show-by-media-query: true;
+		--web-application: true;
 		--web-enable-deep-linking: true;
 	}
 	@keyframes fadein {
@@ -139,7 +139,7 @@
 		position: absolute;
 		width: 12.933px;
 		height: 22.24px;
-		left: 24.531px;
+		left: 24.53px;
 		top: 2.342px;
 		transform: matrix(1,0,0,1,0,0);
 	}
@@ -204,6 +204,10 @@
 		overflow: visible;
 		width: 302px;
 		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: view;
+		--web-action-target: index;
+		cursor: pointer;
 		line-height: 65px;
 		margin-top: -10.5px;
 		text-align: left;
@@ -222,17 +226,13 @@
 		top: 339px;
 		overflow: visible;
 	}
-	#Notes {
+	#Notes_y {
 		left: 60px;
 		top: 192px;
 		position: absolute;
 		overflow: visible;
 		width: 95px;
 		height: 44px;
-		--web-animation: fadein 0.3s ease-out;
-		--web-action-type: view;
-		--web-action-target: notes;
-		cursor: pointer;
 		line-height: 53px;
 		margin-top: -11px;
 		text-align: center;
@@ -292,6 +292,10 @@
 		overflow: visible;
 		width: 155px;
 		height: 44px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: view;
+		--web-action-target: index;
+		cursor: pointer;
 		line-height: 53px;
 		margin-top: -11px;
 		text-align: center;
@@ -316,6 +320,7 @@
 		height: 280px;
 		left: 606px;
 		top: 153px;
+		display: none;
 		overflow: visible;
 	}
 	#About_Me_ {
@@ -721,7 +726,6 @@
 		height: 184px;
 		left: 606px;
 		top: 153px;
-		display: none;
 		overflow: visible;
 	}
 	#Notes_bx {
@@ -3624,7 +3628,7 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="index">
+<div id="notes">
 	<svg class="Background">
 		<rect id="Background" rx="20" ry="20" x="0" y="0" width="1824" height="976">
 		</rect>
@@ -3666,12 +3670,12 @@ window.application = new Application();
 				<span>github.com/alahnala</span>
 			</div>
 		</div>
-		<div id="Allie_Lahnala">
+		<div onclick="application.goToTargetView(event)" id="Allie_Lahnala">
 			<span>Allie Lahnala</span>
 		</div>
 	</div>
 	<div id="Navigation">
-		<div onclick="application.goToTargetView(event)" id="Notes">
+		<div id="Notes_y">
 			<span>Notes</span>
 		</div>
 		<div onclick="application.goToTargetView(event)" id="Activities">
@@ -3680,7 +3684,7 @@ window.application = new Application();
 		<div onclick="application.goToTargetView(event)" id="Research">
 			<span>Research</span>
 		</div>
-		<div id="About_Me">
+		<div onclick="application.goToTargetView(event)" id="About_Me">
 			<span>About Me</span>
 		</div>
 	</div>
