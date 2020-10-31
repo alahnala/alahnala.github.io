@@ -7,15 +7,15 @@
 <title>Allie Lahnala</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: Home;
-		--web-view-id: Home;
+		--web-view-name: Index;
+		--web-view-id: Index;
 		--web-scale-to-fit: true;
-		--web-scale-to-fit-type: width;
+		--web-scale-to-fit-type: fit;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: Home;
+		--web-view-ids: Index;
 	}
 	* {
 		margin: 0;
@@ -23,16 +23,16 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#Home {
+	#Index {
 		position: absolute;
 		width: 1920px;
-		height: 1440px;
-		background-color: rgba(241,246,245,1);
+		height: 1080px;
+		background-color: rgba(232,240,239,1);
 		overflow: hidden;
-		--web-view-name: Home;
-		--web-view-id: Home;
+		--web-view-name: Index;
+		--web-view-id: Index;
 		--web-scale-to-fit: true;
-		--web-scale-to-fit-type: width;
+		--web-scale-to-fit-type: fit;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -47,108 +47,54 @@
 	
 	}
 	#Background {
+		position: absolute;
+		width: 1824px;
+		height: 976px;
+		left: 48px;
+		top: 48px;
+		overflow: visible;
+	}
+	#Background_i {
 		fill: rgba(217,229,228,1);
 	}
-	.Background {
+	.Background_i {
 		position: absolute;
 		overflow: visible;
-		width: 1673px;
-		height: 1192px;
-		left: 123px;
-		top: 136px;
-	}
-	#Body {
-		position: absolute;
-		width: 978px;
-		height: 300px;
-		left: 670px;
-		top: 188px;
-		overflow: visible;
-	}
-	#Item {
-		position: absolute;
-		width: 978px;
-		height: 253px;
-		left: 0px;
-		top: 47px;
-		overflow: visible;
-	}
-	#PhD_Candidate {
+		width: 1824px;
+		height: 976px;
 		left: 0px;
 		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 410px;
-		height: 174px;
-		line-height: 78px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 69px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Im_advised_by_Prof_Rada_Mihalc {
-		left: 420px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 559px;
-		height: 253px;
-		line-height: 48px;
-		margin-top: -12px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Title {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 455px;
-		height: 47px;
-		line-height: 65px;
-		margin-top: -18.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 28px;
-		color: rgba(94,146,112,1);
-		letter-spacing: 0.2px;
 	}
 	#SideBar {
 		position: absolute;
-		width: 456px;
-		height: 433px;
-		left: 122px;
-		top: 188px;
+		width: 449px;
+		height: 479px;
+		left: 56px;
+		top: 107px;
 		overflow: visible;
 	}
 	#Menu {
 		position: absolute;
-		width: 150px;
-		height: 176px;
-		left: 306px;
-		top: 257px;
+		width: 152px;
+		height: 236px;
+		left: 297px;
+		top: 243px;
 		overflow: visible;
 	}
 	#Research {
 		position: absolute;
 		width: 150px;
 		height: 44px;
-		left: 0px;
-		top: 0px;
+		left: 2px;
+		top: 64px;
 		overflow: visible;
+		transition: all 0.3s ease-out;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: research.html;
+		cursor: pointer;
 	}
-	#Research_q {
+	#Research_m {
 		left: 0px;
 		top: 0px;
 		position: absolute;
@@ -165,15 +111,40 @@
 		color: rgba(26,46,53,1);
 		letter-spacing: 0.2px;
 	}
+	#About_Me {
+		position: absolute;
+		width: 152px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#About_Me_o {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 153px;
+		white-space: nowrap;
+		line-height: 53px;
+		margin-top: -11px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 31px;
+		color: rgba(26,46,53,1);
+		letter-spacing: 0.2px;
+	}
 	#Activities {
 		position: absolute;
 		width: 146px;
 		height: 44px;
-		left: 4px;
-		top: 66px;
+		left: 6px;
+		top: 128px;
 		overflow: visible;
 	}
-	#Activities_s {
+	#Activities_q {
 		left: 0px;
 		top: 0px;
 		position: absolute;
@@ -190,20 +161,15 @@
 		color: rgba(26,46,53,1);
 		letter-spacing: 0.2px;
 	}
-	#Notes_t {
+	#Notes {
 		position: absolute;
 		width: 92px;
 		height: 44px;
-		left: 47px;
-		top: 132px;
+		left: 60px;
+		top: 192px;
 		overflow: visible;
-		transition: all 0.3s ease-out;
-		--web-animation: fadein 0.3s ease-out;
-		--web-action-type: page;
-		--web-action-target: Notes.html;
-		cursor: pointer;
 	}
-	#Notes_u {
+	#Notes_s {
 		left: 0px;
 		top: 0px;
 		position: absolute;
@@ -232,17 +198,17 @@
 		fill: rgba(232,240,239,1);
 	}
 	.Crassula_Fondo {
-		filter: drop-shadow(14px 30px 29px rgba(0, 0, 0, 0.059));
+		filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.059));
 		position: absolute;
 		overflow: visible;
-		width: 474px;
-		height: 312px;
+		width: 389px;
+		height: 227px;
 		left: 61px;
 		top: 0px;
 	}
 	#Allie_Lahnala {
-		left: 100px;
-		top: 25px;
+		left: 112px;
+		top: 39px;
 		position: absolute;
 		overflow: visible;
 		width: 302px;
@@ -297,7 +263,7 @@
 		position: absolute;
 		width: 35.764px;
 		height: 12.085px;
-		left: 0.846px;
+		left: 0.845px;
 		top: 14.675px;
 		transform: matrix(1,0,0,1,0,0);
 	}
@@ -322,7 +288,7 @@
 		width: 12.933px;
 		height: 22.232px;
 		left: 0px;
-		top: 2.349px;
+		top: 2.35px;
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#Path_302 {
@@ -333,7 +299,7 @@
 		position: absolute;
 		width: 12.933px;
 		height: 22.24px;
-		left: 24.53px;
+		left: 24.531px;
 		top: 2.341px;
 		transform: matrix(1,0,0,1,0,0);
 	}
@@ -388,6 +354,73 @@
 		font-style: normal;
 		font-weight: bold;
 		font-size: 17px;
+		color: rgba(26,46,53,1);
+		letter-spacing: 0.2px;
+	}
+	#Page_Title {
+		position: absolute;
+		width: 454px;
+		height: 47px;
+		left: 614px;
+		top: 115px;
+		overflow: visible;
+	}
+	#Title {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 455px;
+		height: 47px;
+		line-height: 65px;
+		margin-top: -18.5px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 28px;
+		color: rgba(94,146,112,1);
+		letter-spacing: 0.2px;
+	}
+	#Item {
+		position: absolute;
+		width: 1218px;
+		height: 357px;
+		left: 614px;
+		top: 160px;
+		overflow: visible;
+	}
+	#Header {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 1187px;
+		height: 174px;
+		line-height: 78px;
+		margin-top: -4.5px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 69px;
+		color: rgba(26,46,53,1);
+		letter-spacing: 0.2px;
+	}
+	#Content {
+		left: 19px;
+		top: 104px;
+		position: absolute;
+		overflow: visible;
+		width: 1200px;
+		height: 253px;
+		line-height: 48px;
+		margin-top: -12px;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
 		color: rgba(26,46,53,1);
 		letter-spacing: 0.2px;
 	}
@@ -3232,38 +3265,32 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="Home">
-	<svg class="Background">
-		<rect id="Background" rx="20" ry="20" x="0" y="0" width="1673" height="1192">
-		</rect>
-	</svg>
-	<div id="Body">
-		<div id="Item">
-			<div id="PhD_Candidate">
-				<span>PhD Candidate</span>
-			</div>
-			<div id="Im_advised_by_Prof_Rada_Mihalc">
-				<span>I’m advised by </span><span style="text-decoration:underline;">Prof. Rada Mihalcea</span><span> in the </span><span style="text-decoration:underline;">Language and Information Technologies</span><span> lab.<br/>We are part of the </span><span style="text-decoration:underline;">Artificial Intelligence</span><span> lab in the </span><span style="text-decoration:underline;">Computer Science & Engineering</span><span> department at </span><span style="text-decoration:underline;">University of Michigan</span><span>.</span>
-			</div>
-		</div>
-		<div id="Title">
-			<span>About Me</span>
-		</div>
+<div id="Index">
+	<div id="Background" class="Background">
+		<svg class="Background_i">
+			<rect id="Background_i" rx="20" ry="20" x="0" y="0" width="1824" height="976">
+			</rect>
+		</svg>
 	</div>
-	<div id="SideBar">
+	<div id="SideBar" class="SideBar">
 		<div id="Menu" class="Menu">
-			<div id="Research" class="Research">
-				<div id="Research_q">
+			<div onclick="application.goToTargetView(event)" id="Research" class="Research">
+				<div id="Research_m">
 					<span>Research</span>
 				</div>
 			</div>
+			<div id="About_Me" class="About_Me">
+				<div id="About_Me_o">
+					<span>About Me</span>
+				</div>
+			</div>
 			<div id="Activities" class="Activities">
-				<div id="Activities_s">
+				<div id="Activities_q">
 					<span>Activities</span>
 				</div>
 			</div>
-			<div onclick="application.goToTargetView(event)" id="Notes_t" class="Notes">
-				<div id="Notes_u">
+			<div id="Notes" class="Notes">
+				<div id="Notes_s">
 					<span>Notes</span>
 				</div>
 			</div>
@@ -3311,6 +3338,19 @@ window.application = new Application();
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div id="Page_Title" class="Page_Title">
+		<div id="Title">
+			<span>About Me</span>
+		</div>
+	</div>
+	<div id="Item" class="Item">
+		<div id="Header">
+			<span>PhD Candidate</span>
+		</div>
+		<div id="Content">
+			<span>I’m advised by </span><span style="text-decoration:underline;">Prof. Rada Mihalcea</span><span> in the </span><span style="text-decoration:underline;">Language and Information Technologies</span><span> lab.<br/>We are part of the </span><span style="text-decoration:underline;">Artificial Intelligence</span><span> lab in the </span><span style="text-decoration:underline;">Computer Science & Engineering</span><span> department at </span><span style="text-decoration:underline;">University of Michigan</span><span>.</span>
 		</div>
 	</div>
 </div>
