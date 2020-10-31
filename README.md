@@ -1,1 +1,0 @@
-# alahnala.github.io
