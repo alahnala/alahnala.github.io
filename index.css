@@ -1,994 +1,420 @@
-:root {
-	--web-view-ids: Index,Research;
+.mediaViewInfo {
 	--web-view-name: Index;
 	--web-view-id: Index;
 	--web-scale-to-fit: true;
 	--web-scale-to-fit-type: fit;
-	--web-enable-scale-up: false;
 	--web-scale-on-resize: true;
-	--web-show-scale-controls: false;
-	--web-scale-on-double-click: false;
-	--web-center-horizontally: false;
-	--web-center-vertically: false;
-	--web-actual-size-on-double-click: false;
-	--web-navigate-on-keypress: false;
-	--web-refresh-for-changes: false;
-	--web-add-image-compare: false;
-	--web-show-by-media-query: false;
-	--web-application: false;
-	--web-show-navigation-controls: true;
+	--web-application: true;
 	--web-enable-deep-linking: true;
-	--web-is-overlay: false;
 }
-#Index,
+:root {
+	--web-view-ids: Index;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Index {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(232,240,239,1);
+	overflow: hidden;
+	--web-view-name: Index;
+	--web-view-id: Index;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#Background {
+	position: absolute;
+	width: 1824px;
+	height: 976px;
+	left: 48px;
+	top: 48px;
+	overflow: visible;
+}
+#Background_i {
+	fill: rgba(217,229,228,1);
+}
+.Background_i {
+	position: absolute;
+	overflow: visible;
+	width: 1824px;
+	height: 976px;
+	left: 0px;
+	top: 0px;
+}
+#SideBar {
+	position: absolute;
+	width: 449px;
+	height: 479px;
+	left: 56px;
+	top: 107px;
+	overflow: visible;
+}
+#Menu {
+	position: absolute;
+	width: 152px;
+	height: 236px;
+	left: 297px;
+	top: 243px;
+	overflow: visible;
+}
 #Research {
-	display: none;
+	position: absolute;
+	width: 150px;
+	height: 44px;
+	left: 2px;
+	top: 64px;
+	overflow: visible;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: view;
+	--web-action-target: Research;
+	cursor: pointer;
 }
-@media (min-width: 0px) {
-	.mediaViewInfo {
-		--web-view-name: Index;
-		--web-view-id: Index;
-		--web-scale-to-fit: true;
-		--web-scale-to-fit-type: fit;
-		--web-scale-on-resize: true;
-		--web-show-navigation-controls: true;
-		--web-enable-deep-linking: true;
-	}
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		border: none;
-	}
-	#Index {
-		position: absolute;
-		display: block;
-		width: 1920px;
-		height: 1080px;
-		background-color: rgba(232,240,239,1);
-		overflow: hidden;
-		--web-view-name: Index;
-		--web-view-id: Index;
-		--web-scale-to-fit: true;
-		--web-scale-to-fit-type: fit;
-		--web-scale-on-resize: true;
-		--web-show-navigation-controls: true;
-		--web-enable-deep-linking: true;
-	}
-	@keyframes fadein {
-	
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	
-	}
-	#Background {
-		position: absolute;
-		width: 1824px;
-		height: 976px;
-		left: 48px;
-		top: 48px;
-		overflow: visible;
-	}
-	#Background_i {
-		fill: rgba(217,229,228,1);
-	}
-	.Background_i {
-		position: absolute;
-		overflow: visible;
-		width: 1824px;
-		height: 976px;
-		left: 0px;
-		top: 0px;
-	}
-	#SideBar {
-		position: absolute;
-		width: 449px;
-		height: 479px;
-		left: 56px;
-		top: 107px;
-		overflow: visible;
-	}
-	#Menu {
-		position: absolute;
-		width: 152px;
-		height: 236px;
-		left: 297px;
-		top: 243px;
-		overflow: visible;
-	}
-	#Research_l {
-		position: absolute;
-		width: 150px;
-		height: 44px;
-		left: 2px;
-		top: 64px;
-		overflow: visible;
-		transition: all 0.3s ease-out;
-		--web-animation: fadein 0.3s ease-out;
-		--web-action-type: view;
-		--web-action-target: Research;
-		cursor: pointer;
-	}
-	#Research_m {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 151px;
-		white-space: nowrap;
-		line-height: 53px;
-		margin-top: -11px;
-		text-align: center;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 31px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#About_Me {
-		position: absolute;
-		width: 152px;
-		height: 44px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#About_Me_o {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 153px;
-		white-space: nowrap;
-		line-height: 53px;
-		margin-top: -11px;
-		text-align: center;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 31px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Activities {
-		position: absolute;
-		width: 146px;
-		height: 44px;
-		left: 6px;
-		top: 128px;
-		overflow: visible;
-	}
-	#Activities_q {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 147px;
-		white-space: nowrap;
-		line-height: 53px;
-		margin-top: -11px;
-		text-align: center;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 31px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Notes_r {
-		position: absolute;
-		width: 92px;
-		height: 44px;
-		left: 60px;
-		top: 192px;
-		overflow: visible;
-	}
-	#Notes_s {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 93px;
-		white-space: nowrap;
-		line-height: 53px;
-		margin-top: -11px;
-		text-align: center;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 31px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Contact-Card {
-		position: absolute;
-		width: 448px;
-		height: 262px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Crassula_Fondo {
-		fill: rgba(232,240,239,1);
-	}
-	.Crassula_Fondo {
-		filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.059));
-		position: absolute;
-		overflow: visible;
-		width: 389px;
-		height: 227px;
-		left: 61px;
-		top: 0px;
-	}
-	#Allie_Lahnala {
-		left: 112px;
-		top: 39px;
-		position: absolute;
-		overflow: visible;
-		width: 302px;
-		white-space: nowrap;
-		line-height: 65px;
-		margin-top: -10.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 44px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Allie-Website-Profile {
-		position: absolute;
-		width: 148px;
-		height: 178px;
-		left: 0px;
-		top: 84px;
-		overflow: visible;
-	}
-	#Contact {
-		position: absolute;
-		width: 246.537px;
-		height: 74.401px;
-		left: 164px;
-		top: 112px;
-		overflow: visible;
-	}
-	#email {
-		position: absolute;
-		width: 246.537px;
-		height: 27.15px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Group_257 {
-		position: absolute;
-		width: 37.463px;
-		height: 26.76px;
-		left: 209.073px;
-		top: 0.39px;
-		overflow: visible;
-	}
-	#Path_299 {
-		fill: rgba(3,1,4,1);
-	}
-	.Path_299 {
-		overflow: visible;
-		position: absolute;
-		width: 35.764px;
-		height: 12.085px;
-		left: 0.845px;
-		top: 14.675px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Path_300 {
-		fill: rgba(3,1,4,1);
-	}
-	.Path_300 {
-		overflow: visible;
-		position: absolute;
-		width: 35.767px;
-		height: 16.056px;
-		left: 0.851px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Path_301 {
-		fill: rgba(3,1,4,1);
-	}
-	.Path_301 {
-		overflow: visible;
-		position: absolute;
-		width: 12.933px;
-		height: 22.232px;
-		left: 0px;
-		top: 2.35px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Path_302 {
-		fill: rgba(3,1,4,1);
-	}
-	.Path_302 {
-		overflow: visible;
-		position: absolute;
-		width: 12.933px;
-		height: 22.24px;
-		left: 24.531px;
-		top: 2.341px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#email_ {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 197px;
-		white-space: nowrap;
-		line-height: 26px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 17px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#github {
-		position: absolute;
-		width: 243.537px;
-		height: 36.547px;
-		left: 3px;
-		top: 37.854px;
-		overflow: visible;
-	}
-	#Path_303 {
-		fill: rgba(0,0,0,1);
-	}
-	.Path_303 {
-		overflow: visible;
-		position: absolute;
-		width: 37.463px;
-		height: 36.547px;
-		left: 206.073px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#email_ba {
-		left: 0px;
-		top: 6.146px;
-		position: absolute;
-		overflow: visible;
-		width: 194px;
-		white-space: nowrap;
-		line-height: 26px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 17px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Page_Title {
-		position: absolute;
-		width: 454px;
-		height: 47px;
-		left: 614px;
-		top: 115px;
-		overflow: visible;
-	}
-	#Title {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 455px;
-		height: 47px;
-		line-height: 65px;
-		margin-top: -18.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 28px;
-		color: rgba(94,146,112,1);
-		letter-spacing: 0.2px;
-	}
-	#Item {
-		position: absolute;
-		width: 1218px;
-		height: 357px;
-		left: 614px;
-		top: 160px;
-		overflow: visible;
-	}
-	#Header {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 1187px;
-		height: 174px;
-		line-height: 78px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 69px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Content {
-		left: 19px;
-		top: 104px;
-		position: absolute;
-		overflow: visible;
-		width: 1200px;
-		height: 253px;
-		line-height: 48px;
-		margin-top: -12px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
+#Research_m {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 151px;
+	white-space: nowrap;
+	line-height: 53px;
+	margin-top: -11px;
+	text-align: center;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
 }
-@media (min-width: 0px) {
-	.mediaViewInfo {
-		--web-view-name: Research;
-		--web-view-id: Research;
-		--web-scale-to-fit: true;
-		--web-scale-to-fit-type: fit;
-		--web-scale-on-resize: true;
-		--web-show-navigation-controls: true;
-		--web-enable-deep-linking: true;
-	}
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		border: none;
-	}
-	#Research {
-		position: absolute;
-		display: block;
-		width: 1920px;
-		height: 1080px;
-		background-color: rgba(232,240,239,1);
-		overflow: hidden;
-		--web-view-name: Research;
-		--web-view-id: Research;
-		--web-scale-to-fit: true;
-		--web-scale-to-fit-type: fit;
-		--web-scale-on-resize: true;
-		--web-show-navigation-controls: true;
-		--web-enable-deep-linking: true;
-	}
-	#Background_bf {
-		position: absolute;
-		width: 1824px;
-		height: 976px;
-		left: 48px;
-		top: 48px;
-		overflow: visible;
-	}
-	#Background_bg {
-		fill: rgba(217,229,228,1);
-	}
-	.Background_bg {
-		position: absolute;
-		overflow: visible;
-		width: 1824px;
-		height: 976px;
-		left: 0px;
-		top: 0px;
-	}
-	#SideBar_bh {
-		position: absolute;
-		width: 449px;
-		height: 479px;
-		left: 56px;
-		top: 107px;
-		overflow: visible;
-	}
-	#Menu_bi {
-		position: absolute;
-		width: 152px;
-		height: 236px;
-		left: 297px;
-		top: 243px;
-		overflow: visible;
-	}
-	#Research_bj {
-		position: absolute;
-		width: 150px;
-		height: 44px;
-		left: 1px;
-		top: 64px;
-		overflow: visible;
-	}
-	#Research_bk {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 151px;
-		white-space: nowrap;
-		line-height: 53px;
-		margin-top: -11px;
-		text-align: center;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 31px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#About_Me_bl {
-		position: absolute;
-		width: 152px;
-		height: 44px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#About_Me_bm {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 153px;
-		white-space: nowrap;
-		line-height: 53px;
-		margin-top: -11px;
-		text-align: center;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 31px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Activities_bn {
-		position: absolute;
-		width: 146px;
-		height: 44px;
-		left: 5px;
-		top: 128px;
-		overflow: visible;
-	}
-	#Activities_bo {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 147px;
-		white-space: nowrap;
-		line-height: 53px;
-		margin-top: -11px;
-		text-align: center;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 31px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Notes_bp {
-		position: absolute;
-		width: 92px;
-		height: 44px;
-		left: 59px;
-		top: 192px;
-		overflow: visible;
-	}
-	#Notes_bq {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 93px;
-		white-space: nowrap;
-		line-height: 53px;
-		margin-top: -11px;
-		text-align: center;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 31px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Contact-Card_br {
-		position: absolute;
-		width: 448px;
-		height: 262px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Crassula_Fondo_bs {
-		fill: rgba(232,240,239,1);
-	}
-	.Crassula_Fondo_bs {
-		filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.059));
-		position: absolute;
-		overflow: visible;
-		width: 389px;
-		height: 227px;
-		left: 61px;
-		top: 0px;
-	}
-	#Allie_Lahnala_bt {
-		left: 112px;
-		top: 39px;
-		position: absolute;
-		overflow: visible;
-		width: 302px;
-		white-space: nowrap;
-		line-height: 65px;
-		margin-top: -10.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 44px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Allie-Website-Profile_bu {
-		position: absolute;
-		width: 148px;
-		height: 178px;
-		left: 0px;
-		top: 84px;
-		overflow: visible;
-	}
-	#Contact_bv {
-		position: absolute;
-		width: 246.537px;
-		height: 74.401px;
-		left: 164px;
-		top: 112px;
-		overflow: visible;
-	}
-	#email_bw {
-		position: absolute;
-		width: 246.537px;
-		height: 27.15px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Group_257_bx {
-		position: absolute;
-		width: 37.463px;
-		height: 26.76px;
-		left: 209.073px;
-		top: 0.39px;
-		overflow: visible;
-	}
-	#Path_299_by {
-		fill: rgba(3,1,4,1);
-	}
-	.Path_299_by {
-		overflow: visible;
-		position: absolute;
-		width: 35.764px;
-		height: 12.085px;
-		left: 0.845px;
-		top: 14.675px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Path_300_bz {
-		fill: rgba(3,1,4,1);
-	}
-	.Path_300_bz {
-		overflow: visible;
-		position: absolute;
-		width: 35.767px;
-		height: 16.056px;
-		left: 0.851px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Path_301_b {
-		fill: rgba(3,1,4,1);
-	}
-	.Path_301_b {
-		overflow: visible;
-		position: absolute;
-		width: 12.933px;
-		height: 22.232px;
-		left: 0px;
-		top: 2.35px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Path_302_b {
-		fill: rgba(3,1,4,1);
-	}
-	.Path_302_b {
-		overflow: visible;
-		position: absolute;
-		width: 12.933px;
-		height: 22.24px;
-		left: 24.53px;
-		top: 2.341px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#email_b {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 197px;
-		white-space: nowrap;
-		line-height: 26px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 17px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#github_b {
-		position: absolute;
-		width: 243.537px;
-		height: 36.547px;
-		left: 3px;
-		top: 37.854px;
-		overflow: visible;
-	}
-	#Path_303_b {
-		fill: rgba(0,0,0,1);
-	}
-	.Path_303_b {
-		overflow: visible;
-		position: absolute;
-		width: 37.463px;
-		height: 36.547px;
-		left: 206.073px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#email_ca {
-		left: 0px;
-		top: 6.146px;
-		position: absolute;
-		overflow: visible;
-		width: 194px;
-		white-space: nowrap;
-		line-height: 26px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 17px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Page_Title_b {
-		position: absolute;
-		width: 454px;
-		height: 47px;
-		left: 614px;
-		top: 115px;
-		overflow: visible;
-	}
-	#Title_b {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 455px;
-		height: 47px;
-		line-height: 65px;
-		margin-top: -18.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 28px;
-		color: rgba(94,146,112,1);
-		letter-spacing: 0.2px;
-	}
-	#Body {
-		mix-blend-mode: normal;
-		position: absolute;
-		width: 1218px;
-		height: 864px;
-		left: 614px;
-		top: 160px;
-		overflow: visible;
-	}
-	#Body_b {
-		position: absolute;
-		width: 1218px;
-		height: 798px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Item_ca {
-		position: absolute;
-		width: 1218px;
-		height: 187px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Header_cb {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 1187px;
-		height: 174px;
-		line-height: 78px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 69px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Content_cc {
-		left: 19px;
-		top: 104px;
-		position: absolute;
-		overflow: hidden;
-		width: 1200px;
-		height: 83px;
-		line-height: 48px;
-		margin-top: -12px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Item_cd {
-		position: absolute;
-		width: 1218px;
-		height: 143px;
-		left: 0px;
-		top: 469px;
-		overflow: visible;
-	}
-	#Header_ce {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 1187px;
-		height: 143px;
-		line-height: 78px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 69px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Content_cf {
-		left: 19px;
-		top: 104px;
-		position: absolute;
-		overflow: visible;
-		width: 1200px;
-		height: 39px;
-		line-height: 48px;
-		margin-top: -12px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Item_cg {
-		position: absolute;
-		width: 1218px;
-		height: 282px;
-		left: 0px;
-		top: 187px;
-		overflow: visible;
-	}
-	#Header_ch {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 1187px;
-		height: 174px;
-		line-height: 78px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 69px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Content_ci {
-		left: 19px;
-		top: 104px;
-		position: absolute;
-		overflow: visible;
-		width: 1200px;
-		height: 178px;
-		line-height: 48px;
-		margin-top: -12px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Item_cj {
-		position: absolute;
-		width: 1218px;
-		height: 186px;
-		left: 0px;
-		top: 612px;
-		overflow: visible;
-	}
-	#Header_ck {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 1187px;
-		height: 174px;
-		line-height: 78px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 69px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
-	#Content_cl {
-		left: 19px;
-		top: 104px;
-		position: absolute;
-		overflow: visible;
-		width: 1200px;
-		height: 82px;
-		line-height: 48px;
-		margin-top: -12px;
-		text-align: left;
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(26,46,53,1);
-		letter-spacing: 0.2px;
-	}
+#About_Me {
+	position: absolute;
+	width: 152px;
+	height: 44px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#About_Me_o {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 153px;
+	white-space: nowrap;
+	line-height: 53px;
+	margin-top: -11px;
+	text-align: center;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#Activities {
+	position: absolute;
+	width: 146px;
+	height: 44px;
+	left: 6px;
+	top: 128px;
+	overflow: visible;
+}
+#Activities_q {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 147px;
+	white-space: nowrap;
+	line-height: 53px;
+	margin-top: -11px;
+	text-align: center;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#Notes {
+	position: absolute;
+	width: 92px;
+	height: 44px;
+	left: 60px;
+	top: 192px;
+	overflow: visible;
+}
+#Notes_s {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 93px;
+	white-space: nowrap;
+	line-height: 53px;
+	margin-top: -11px;
+	text-align: center;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#Contact-Card {
+	position: absolute;
+	width: 448px;
+	height: 262px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Crassula_Fondo {
+	fill: rgba(232,240,239,1);
+}
+.Crassula_Fondo {
+	filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.059));
+	position: absolute;
+	overflow: visible;
+	width: 389px;
+	height: 227px;
+	left: 61px;
+	top: 0px;
+}
+#Allie_Lahnala {
+	left: 112px;
+	top: 39px;
+	position: absolute;
+	overflow: visible;
+	width: 302px;
+	white-space: nowrap;
+	line-height: 65px;
+	margin-top: -10.5px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 44px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#Allie-Website-Profile {
+	position: absolute;
+	width: 148px;
+	height: 178px;
+	left: 0px;
+	top: 84px;
+	overflow: visible;
+}
+#Contact {
+	position: absolute;
+	width: 246.537px;
+	height: 74.401px;
+	left: 164px;
+	top: 112px;
+	overflow: visible;
+}
+#email {
+	position: absolute;
+	width: 246.537px;
+	height: 27.15px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Group_257 {
+	position: absolute;
+	width: 37.463px;
+	height: 26.76px;
+	left: 209.073px;
+	top: 0.39px;
+	overflow: visible;
+}
+#Path_299 {
+	fill: rgba(3,1,4,1);
+}
+.Path_299 {
+	overflow: visible;
+	position: absolute;
+	width: 35.764px;
+	height: 12.085px;
+	left: 0.845px;
+	top: 14.675px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Path_300 {
+	fill: rgba(3,1,4,1);
+}
+.Path_300 {
+	overflow: visible;
+	position: absolute;
+	width: 35.767px;
+	height: 16.056px;
+	left: 0.851px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Path_301 {
+	fill: rgba(3,1,4,1);
+}
+.Path_301 {
+	overflow: visible;
+	position: absolute;
+	width: 12.933px;
+	height: 22.232px;
+	left: 0px;
+	top: 2.35px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Path_302 {
+	fill: rgba(3,1,4,1);
+}
+.Path_302 {
+	overflow: visible;
+	position: absolute;
+	width: 12.933px;
+	height: 22.24px;
+	left: 24.531px;
+	top: 2.341px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#email_ {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 197px;
+	white-space: nowrap;
+	line-height: 26px;
+	margin-top: -4.5px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#github {
+	position: absolute;
+	width: 243.537px;
+	height: 36.547px;
+	left: 3px;
+	top: 37.854px;
+	overflow: visible;
+}
+#Path_303 {
+	fill: rgba(0,0,0,1);
+}
+.Path_303 {
+	overflow: visible;
+	position: absolute;
+	width: 37.463px;
+	height: 36.547px;
+	left: 206.073px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#email_ba {
+	left: 0px;
+	top: 6.146px;
+	position: absolute;
+	overflow: visible;
+	width: 194px;
+	white-space: nowrap;
+	line-height: 26px;
+	margin-top: -4.5px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#Page_Title {
+	position: absolute;
+	width: 454px;
+	height: 47px;
+	left: 614px;
+	top: 115px;
+	overflow: visible;
+}
+#Title {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 455px;
+	height: 47px;
+	line-height: 65px;
+	margin-top: -18.5px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	color: rgba(94,146,112,1);
+	letter-spacing: 0.2px;
+}
+#Item {
+	position: absolute;
+	width: 1218px;
+	height: 357px;
+	left: 614px;
+	top: 160px;
+	overflow: visible;
+}
+#Header {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1187px;
+	height: 174px;
+	line-height: 78px;
+	margin-top: -4.5px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 69px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#Content {
+	left: 19px;
+	top: 104px;
+	position: absolute;
+	overflow: visible;
+	width: 1200px;
+	height: 253px;
+	line-height: 48px;
+	margin-top: -12px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
 }
