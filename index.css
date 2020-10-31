@@ -1,14 +1,11 @@
 .mediaViewInfo {
-	--web-view-name: Index;
-	--web-view-id: Index;
-	--web-scale-to-fit: true;
-	--web-scale-to-fit-type: fit;
+	--web-view-name: Allie-Lahnala;
+	--web-view-id: Allie-Lahnala;
 	--web-scale-on-resize: true;
-	--web-application: true;
 	--web-enable-deep-linking: true;
 }
 :root {
-	--web-view-ids: Index;
+	--web-view-ids: Allie-Lahnala;
 }
 * {
 	margin: 0;
@@ -16,229 +13,54 @@
 	box-sizing: border-box;
 	border: none;
 }
-#Index {
+#Allie-Lahnala {
 	position: absolute;
 	width: 1920px;
 	height: 1080px;
 	background-color: rgba(232,240,239,1);
 	overflow: hidden;
-	--web-view-name: Index;
-	--web-view-id: Index;
-	--web-scale-to-fit: true;
-	--web-scale-to-fit-type: fit;
+	--web-view-name: Allie-Lahnala;
+	--web-view-id: Allie-Lahnala;
 	--web-scale-on-resize: true;
-	--web-application: true;
 	--web-enable-deep-linking: true;
 }
-@keyframes fadein {
-
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-
-}
 #Background {
-	position: absolute;
-	width: 1824px;
-	height: 976px;
-	left: 48px;
-	top: 48px;
-	overflow: visible;
-}
-#Background_i {
 	fill: rgba(217,229,228,1);
 }
-.Background_i {
+.Background {
 	position: absolute;
 	overflow: visible;
 	width: 1824px;
 	height: 976px;
-	left: 0px;
-	top: 0px;
+	left: 49px;
+	top: 51px;
 }
-#SideBar {
+#Contact {
 	position: absolute;
-	width: 449px;
-	height: 479px;
-	left: 56px;
-	top: 107px;
+	width: 387px;
+	height: 175px;
+	left: 125px;
+	top: 140px;
 	overflow: visible;
 }
-#Menu {
-	position: absolute;
-	width: 152px;
-	height: 236px;
-	left: 297px;
-	top: 243px;
-	overflow: visible;
-}
-#Research {
-	position: absolute;
-	width: 150px;
-	height: 44px;
-	left: 2px;
-	top: 64px;
-	overflow: visible;
-	transition: all 0.3s ease-out;
-	--web-animation: fadein 0.3s ease-out;
-	--web-action-type: view;
-	--web-action-target: Research;
-	cursor: pointer;
-}
-#Research_m {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 151px;
-	white-space: nowrap;
-	line-height: 53px;
-	margin-top: -11px;
-	text-align: center;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 31px;
-	color: rgba(26,46,53,1);
-	letter-spacing: 0.2px;
-}
-#About_Me {
-	position: absolute;
-	width: 152px;
-	height: 44px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-#About_Me_o {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 153px;
-	white-space: nowrap;
-	line-height: 53px;
-	margin-top: -11px;
-	text-align: center;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 31px;
-	color: rgba(26,46,53,1);
-	letter-spacing: 0.2px;
-}
-#Activities {
-	position: absolute;
-	width: 146px;
-	height: 44px;
-	left: 6px;
-	top: 128px;
-	overflow: visible;
-}
-#Activities_q {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 147px;
-	white-space: nowrap;
-	line-height: 53px;
-	margin-top: -11px;
-	text-align: center;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 31px;
-	color: rgba(26,46,53,1);
-	letter-spacing: 0.2px;
-}
-#Notes {
-	position: absolute;
-	width: 92px;
-	height: 44px;
-	left: 60px;
-	top: 192px;
-	overflow: visible;
-}
-#Notes_s {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 93px;
-	white-space: nowrap;
-	line-height: 53px;
-	margin-top: -11px;
-	text-align: center;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 31px;
-	color: rgba(26,46,53,1);
-	letter-spacing: 0.2px;
-}
-#Contact-Card {
-	position: absolute;
-	width: 448px;
-	height: 262px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-#Crassula_Fondo {
+#Contact-Card-Background {
 	fill: rgba(232,240,239,1);
 }
-.Crassula_Fondo {
+.Contact-Card-Background {
 	filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.059));
 	position: absolute;
 	overflow: visible;
 	width: 389px;
-	height: 227px;
-	left: 61px;
-	top: 0px;
-}
-#Allie_Lahnala {
-	left: 112px;
-	top: 39px;
-	position: absolute;
-	overflow: visible;
-	width: 302px;
-	white-space: nowrap;
-	line-height: 65px;
-	margin-top: -10.5px;
-	text-align: left;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 44px;
-	color: rgba(26,46,53,1);
-	letter-spacing: 0.2px;
-}
-#Allie-Website-Profile {
-	position: absolute;
-	width: 148px;
-	height: 178px;
+	height: 177px;
 	left: 0px;
-	top: 84px;
-	overflow: visible;
-}
-#Contact {
-	position: absolute;
-	width: 246.537px;
-	height: 74.401px;
-	left: 164px;
-	top: 112px;
-	overflow: visible;
+	top: 0px;
 }
 #email {
 	position: absolute;
 	width: 246.537px;
 	height: 27.15px;
-	left: 0px;
-	top: 0px;
+	left: 95px;
+	top: 79px;
 	overflow: visible;
 }
 #Group_257 {
@@ -257,7 +79,7 @@
 	position: absolute;
 	width: 35.764px;
 	height: 12.085px;
-	left: 0.845px;
+	left: 0.846px;
 	top: 14.675px;
 	transform: matrix(1,0,0,1,0,0);
 }
@@ -293,11 +115,11 @@
 	position: absolute;
 	width: 12.933px;
 	height: 22.24px;
-	left: 24.531px;
+	left: 24.53px;
 	top: 2.341px;
 	transform: matrix(1,0,0,1,0,0);
 }
-#email_ {
+#email_p {
 	left: 0px;
 	top: 0px;
 	position: absolute;
@@ -318,8 +140,8 @@
 	position: absolute;
 	width: 243.537px;
 	height: 36.547px;
-	left: 3px;
-	top: 37.854px;
+	left: 98px;
+	top: 116.854px;
 	overflow: visible;
 }
 #Path_303 {
@@ -334,7 +156,7 @@
 	top: 0px;
 	transform: matrix(1,0,0,1,0,0);
 }
-#email_ba {
+#email_s {
 	left: 0px;
 	top: 6.146px;
 	position: absolute;
@@ -351,21 +173,122 @@
 	color: rgba(26,46,53,1);
 	letter-spacing: 0.2px;
 }
-#Page_Title {
+#Allie_Lahnala {
+	left: 43px;
+	top: 6px;
 	position: absolute;
-	width: 454px;
-	height: 47px;
-	left: 614px;
-	top: 115px;
+	overflow: visible;
+	width: 302px;
+	white-space: nowrap;
+	line-height: 65px;
+	margin-top: -10.5px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 44px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#Navigation {
+	position: absolute;
+	width: 154px;
+	height: 236px;
+	left: 359px;
+	top: 339px;
 	overflow: visible;
 }
-#Title {
+#Notes {
+	left: 60px;
+	top: 192px;
+	position: absolute;
+	overflow: visible;
+	width: 95px;
+	height: 44px;
+	line-height: 53px;
+	margin-top: -11px;
+	text-align: center;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#Activities {
+	left: 6px;
+	top: 128px;
+	position: absolute;
+	overflow: visible;
+	width: 149px;
+	height: 44px;
+	line-height: 53px;
+	margin-top: -11px;
+	text-align: center;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#Research {
+	left: 2px;
+	top: 64px;
+	position: absolute;
+	overflow: visible;
+	width: 153px;
+	height: 44px;
+	line-height: 53px;
+	margin-top: -11px;
+	text-align: center;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#About_Me {
 	left: 0px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 455px;
-	height: 47px;
+	width: 155px;
+	height: 44px;
+	line-height: 53px;
+	margin-top: -11px;
+	text-align: center;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#Allie-Website-Profile {
+	position: absolute;
+	width: 148px;
+	height: 178px;
+	left: 56px;
+	top: 191px;
+	overflow: visible;
+}
+#About-Me {
+	position: absolute;
+	width: 1188px;
+	height: 280px;
+	left: 606px;
+	top: 153px;
+	overflow: visible;
+}
+#About_Me_ {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 140px;
+	height: 39px;
 	line-height: 65px;
 	margin-top: -18.5px;
 	text-align: left;
@@ -376,21 +299,13 @@
 	color: rgba(94,146,112,1);
 	letter-spacing: 0.2px;
 }
-#Item {
-	position: absolute;
-	width: 1218px;
-	height: 357px;
-	left: 614px;
-	top: 160px;
-	overflow: visible;
-}
 #Header {
 	left: 0px;
-	top: 0px;
+	top: 47px;
 	position: absolute;
 	overflow: visible;
-	width: 1187px;
-	height: 174px;
+	width: 551px;
+	height: 96px;
 	line-height: 78px;
 	margin-top: -4.5px;
 	text-align: left;
@@ -402,12 +317,72 @@
 	letter-spacing: 0.2px;
 }
 #Content {
-	left: 19px;
-	top: 104px;
+	left: 0px;
+	top: 151px;
 	position: absolute;
 	overflow: visible;
-	width: 1200px;
-	height: 253px;
+	width: 1189px;
+	height: 129px;
+	line-height: 48px;
+	margin-top: -12px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#Research_ {
+	position: absolute;
+	width: 550px;
+	height: 232px;
+	left: 606px;
+	top: 455px;
+	display: none;
+	overflow: visible;
+}
+#Research_ba {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 140px;
+	height: 39px;
+	line-height: 65px;
+	margin-top: -18.5px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	color: rgba(94,146,112,1);
+	letter-spacing: 0.2px;
+}
+#Interests {
+	left: 0px;
+	top: 47px;
+	position: absolute;
+	overflow: visible;
+	width: 551px;
+	height: 96px;
+	line-height: 78px;
+	margin-top: -4.5px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 69px;
+	color: rgba(26,46,53,1);
+	letter-spacing: 0.2px;
+}
+#Content_ {
+	left: 0px;
+	top: 151px;
+	position: absolute;
+	overflow: visible;
+	width: 307px;
+	height: 81px;
 	line-height: 48px;
 	margin-top: -12px;
 	text-align: left;
