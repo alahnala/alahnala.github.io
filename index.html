@@ -35,6 +35,30 @@ function changeActive(tabNumber) {
 		word-break: break-all;
 
 	}
+	.links {
+		color: #EF959C;
+		letter-spacing: 0.2px;
+	}
+	.links a {
+		/* background-color: #eee; */
+		color: #EF959C;
+		display: block;
+		/* padding: 12px; */
+		text-decoration: none;
+	}
+
+	.links a:hover {
+		text-decoration: underline;
+		color: #EF959C;
+		font-weight: bold;
+		filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.161));
+	}
+
+	.links a.active {
+		color: #EF959C;
+		font-weight: bold;
+		filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.161));
+	}
 	.navigation {
 		padding-right: 12px;
 		position: relative;
@@ -156,7 +180,7 @@ function changeActive(tabNumber) {
 					<div class="media contact github">
 						<div class="media-body">
 							<p class="media-heading text-right">
-								<a href="https://github.com/alahnala">github.com/alahnala</a></p>
+								<a class="links" href="https://github.com/alahnala">github.com/alahnala</a></p>
 						</div>
 						<div class="media-right media-middle">
 							<img src="img/github.png" class="media-object" style="width:18px">
@@ -185,7 +209,7 @@ function changeActive(tabNumber) {
 		</div>
 		
 		<div class="content-text">
-			<span>I’m advised by </span><span style="text-decoration:underline;">Prof. Rada Mihalcea</span><span> in the </span><span style="text-decoration:underline;">Language and Information Technologies</span><span> lab.<br/>We are part of the </span><span style="text-decoration:underline;">Artificial Intelligence</span><span> lab in the </span><span style="text-decoration:underline;">Computer Science & Engineering</span><span> department <br/>at </span><span style="text-decoration:underline;">University of Michigan</span><span>.</span>
+			<span>I’m advised by </span><span style="text-decoration:underline;">Prof. Rada Mihalcea</span><span> in the </span><span style="text-decoration:underline;"><a class="links" href="http://lit.eecs.umich.edu">Language & Information Technologies lab</a></span><span>.<br/>We are part of the </span><span style="text-decoration:underline;">Artificial Intelligence</span><span> lab in the </span><span style="text-decoration:underline;">Computer Science & Engineering</span><span> department <br/>at </span><span style="text-decoration:underline;">University of Michigan</span><span>.</span>
 		</div>
 	</div>
 	<div class="page research" style="display:none;">
