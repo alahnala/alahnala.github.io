@@ -2,16 +2,20 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof.png
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>04C20 Fachbereich 12</p>
+    <p>Hans-Meerwein-Straβe 6</p>
+    <p>35043 Marburg Germany</p>
+
+
+
+
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
@@ -19,8 +23,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am Ph.D. student advised by Prof. Lucie Flek at the University of Bonn, Germany in the [Conversational AI and Social Analytics (CAISA) lab](https://caisa-lab.github.io/), studying natural language processing (NLP). I began my Ph.D. studies at the University of Michigan with Prof. Rada Mihalcea in the [LIT lab](http://lit.eecs.umich.edu/).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research focuses on computational social science and conversation dynamics in goal-oriented settings and interpersonal interactions involving particular social intents, such as persuasion and offering support. I work with various domains and contexts, such as online forums for supportive and opinionated interactions, and clinical conversations, in which I investigate stance dynamics and empathetic interactions, and transfer learning to better model social NLP tasks. I am also interested in developing theory-driven empathy research approaches for NLP that consider the complex affective and cognitive processes and social factors that influence empathetic expression and perception. 
+
