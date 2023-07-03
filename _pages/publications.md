@@ -9,6 +9,8 @@ nav_order: 1
 <!-- _pages/publications.md -->
 <div class="publications">
 
+I publish with my full first name Allison.
+
 {% bibliography -f {{ site.scholar.bibliography }} %}
 
 </div>
