@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Giving a talk "Social NLP for Discourse & Conversation" on my PhD research at Stony Brook Department of Computer Science.
+Giving a talk "**Social NLP for Discourse & Conversation**" on my PhD research at Stony Brook Department of Computer Science.
