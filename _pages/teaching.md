@@ -9,6 +9,22 @@ nav_order: 5
 
 Courses and volunteering.
 
+### Social Natural Language Processing Workshop
+***Summer 2023, Stony Brook University, Institute for AI-Driven Discovery and Innovation***
+
+**Course description:** Social Natural Language Processing is a field that combines social science research with computational methods and tools. This interdisciplinary field allows social scientists to conduct research on large-scale data sets, and use machine learning to identify patterns and relationships. Computational tools can be used to analyze large-scale text data, including social media posts, news articles, and historical documents. Text analysis methods include sentiment analysis, topic modeling, and machine learning-based classification, which can provide insights into the attitudes and beliefs of large groups of people. This 2-week workshop brings together two types of audiences: CS AI students and social and psychological researchers interested in language and AI. 
+
+Students of computer science will get to learn about the latest techniques specifically for language modeling and dialog, within the context of important social scientific research questions. Students of human-oriented fields, such as psychologists and sociologists, will collaborate with computer science students to explore a wide range of research topics related to language and communication. For example, automated emotion analysis can be useful in studying public opinion, user behavior, or political discourse. By examining patterns of language use, participants can gain insights into social norms, power dynamics, and cultural values. Psychologists and NLP researchers can collaborate to develop algorithms that analyze language use to identify personality traits, which can be useful in predicting behavior in certain contexts. 
+
+Participants will learn about the various computational tools and methods used in social NLP, including sentiment analysis, topic modeling, and machine learning-based classification. They will also gain an understanding of how these methods can be used to analyze large-scale text data and gain insights into social norms, power dynamics, and cultural values. Participants will test the effectiveness of various NLP models on social science research questions. 
+
+*Instructors:* Lucie Flek (Professor, University of Bonn, Computer Science), 	Allie Lahnala (PhD Student, University of Bonn), Ryan Boyd (Professor, Stony Brook University, Psychology & Computer Science). 
+
+*Organizers:* Lucie Flek, H. Andrew Schwartz
+
+
+
+
 ### Artificial Intelligence Ethics Seminar
 ***Winter Semester 2022/23, University of Marburg***
 
