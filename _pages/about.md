@@ -9,9 +9,9 @@ profile:
   image: prof.png
   image_circular: false # crops the image to make it circular
   address: >
-    <p>04C20 Fachbereich 12</p>
-    <p>Hans-Meerwein-Straβe 6</p>
-    <p>35043 Marburg Germany</p>
+    <p>Bonn-Aachen International Center for Information Technology</p>
+    <p>Friedrich-Hirzebruch-Allee 6</p>
+    <p>53115 Bonn Germany</p>
 
 
 
