@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Wrapped up our first year of *Explore CS Research* at University of Michigan! Article: [*Encouraging careers in research*](https://cse.engin.umich.edu/stories/encouraging-careers-in-research).
+Wrapped up our first year of *Explore CS Research* at University of Michigan! Article: *[Encouraging careers in research](https://cse.engin.umich.edu/stories/encouraging-careers-in-research)*.

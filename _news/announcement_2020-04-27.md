@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Wrapped up another year of Explore Computer Science Research! Article: [*CS student research and industry connections hit home – from home*](https://ai.engin.umich.edu/stories/cs-student-research-and-industry-connections-hit-home-from-home).
+Wrapped up another year of Explore Computer Science Research! Article: *[CS student research and industry connections hit home – from home](https://ai.engin.umich.edu/stories/cs-student-research-and-industry-connections-hit-home-from-home)*.
