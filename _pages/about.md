@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: right
-  image: prof.png
+  image: profile.png
   image_circular: false # crops the image to make it circular
   address: >
     <p>NIH/NIDA</p>
