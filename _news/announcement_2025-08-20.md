@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "The Practical Impacts of Theoretical Constructs on Empathy Modeling" was accepted to the EMNLP 2026 main conference!
+Our paper "The Practical Impacts of Theoretical Constructs on Empathy Modeling" was accepted to the EMNLP 2025 main conference!
