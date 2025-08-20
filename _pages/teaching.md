@@ -9,6 +9,13 @@ nav_order: 5
 
 Courses and volunteering.
 
+### Computer Science Practice and Experience: Development Basics (COMPSCI 1XC3)
+***Winter 2026, McMaster University, Department of Computing & Software***
+
+COMPSCI 1XC3 covers fundamental skills for software development, topics including C programming in UNIX/LINUX environments and git version control. More details will come as the semester nears.
+
+
+
 ### Social Natural Language Processing Workshop
 ***Summer 2023, Stony Brook University, Institute for AI-Driven Discovery and Innovation***
 
