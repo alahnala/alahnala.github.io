@@ -33,7 +33,7 @@ Participants will learn about the various computational tools and methods used i
 
 
 ### Artificial Intelligence Ethics Seminar
-***Winter Semester 2022/23, University of Marburg***
+***Winter Semester 2022/23, University of Marburg and University of Bonn***
 
 **Course description:** In this 15-week seminar, we study artificial intelligence and the ethical dilemmas associated with the research, design, deployment, and interaction with AI systems. Six broad modules structure the seminar: foundations of AI and AI ethics; bias & fairness; privacy & data privacy; social networks & civility of communication; politics & policy; and AI for "social good." Students learn about the design of ethical and socially responsible systems and gain practice engaging with multidisciplinary perspectives from behavioral and social science. Students develop skills in assessing AI systems, identifying ethical dilemmas and social impacts, reasoning through ethical and social issues, and communicating their reasoning.
 
