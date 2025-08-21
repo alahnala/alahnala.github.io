@@ -27,6 +27,16 @@ This directed readings course is designed to help the student build foundational
 
 The student will then select a focused research question related to LBAs, conduct a literature review, and implement and report on a small-scale experimental study (e.g., through reproduction, ablation testing, or comparison of models). To facilitate this, the student is welcome to select an open community task (e.g., a past CLPsych task) that offers labeled datasets and baselines.
 
+By the end of the course, the successful student will be able to:
+
+1. summarize the research paradigms and state-of-the-art in NLP approaches to mental health assessment;
+2. discuss open challenges in LBAs, including conceptual, technical and ethical aspects;
+3. conduct a literature review to contextualize an LBA-related research question and identify methodological gaps;
+4. implement an NLP experimental pipeline, including data analysis;
+5. effectively present the research challenge, literature review, and experimental report in writing.
+
+The overall goal, which requires the student achieve these learning objectives, is to prepare the student for graduate-level research in natural language processing or a related domain.
+
 
 ### Social Natural Language Processing Workshop
 ***Summer 2023, Stony Brook University, Institute for AI-Driven Discovery and Innovation***
