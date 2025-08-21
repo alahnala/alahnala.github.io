@@ -14,6 +14,18 @@ Courses and volunteering.
 
 COMPSCI 1XC3 covers fundamental skills for software development, topics including C programming in UNIX/LINUX environments and git version control. More details will come as the semester nears.
 
+### COMPSCI 4Z03: Directed Readings in Natural Language Processing for Mental Health Assessment
+***Fall 2025, McMaster University, Department of Computing & Software***
+
+Natural language processing (NLP) techniques are increasingly used for language-based assessments (LBAs) of mental health. Language data from sources such as clinical notes, social media, interviews, and self-reports often carries subtle linguistic and behavioral signals that can reflect depression, anxiety, suicidality, and other psychological states. Research in this area focuses on detecting these markers to population-level monitoring and mental health screening.
+
+This directed readings course is designed to help the student build foundational and research-oriented competencies in LBAs, with the goal of preparing for graduate-level research in this area. The course will begin with readings focused on technical and methodological foundations of NLP systems used in mental health assessment, with an emphasis on:
+
+1. psycholinguistic feature extraction and language markers of psychological states;
+2. temporal and time-series analysis to examine and forecast changes in mental health states;
+3. deep learning techniques, including large language models (LLMs), for symptom tracking and adaptive conversational assessments.
+
+The student will then select a focused research question related to LBAs, conduct a literature review, and implement and report on a small-scale experimental study (e.g., through reproduction, ablation testing, or comparison of models). To facilitate this, the student is welcome to select an open community task (e.g., a past CLPsych task) that offers labeled datasets and baselines.
 
 
 ### Social Natural Language Processing Workshop
